@@ -1,7 +1,7 @@
 export default class Funcionamento {
-  constructor(funcionamento, active) {
+  constructor(funcionamento, activeClass) {
     this.funcionamento = document.querySelector(funcionamento);
-    this.active = this.active;
+    this.activeClass = activeClass;
   }
 
   dadosFuncionamento() {
@@ -27,14 +27,14 @@ export default class Funcionamento {
 
   ativaAberto() {
     if (this.estaAberto()) {
-      this.funcionamento.classList.add(this.active);
+      this.funcionamento.classList.add(this.activeClass);
     }
   }
 
   init() {
     if (this.funcionamento) {
-      this.dadosFuncionamento;
-      this.dadosAgora;
+      this.dadosFuncionamento();
+      this.dadosAgora();
       this.ativaAberto();
     }
     return this;
